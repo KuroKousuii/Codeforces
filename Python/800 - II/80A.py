@@ -1,0 +1,18 @@
+from math import sqrt
+
+
+def prime(a):
+    if a < 2:
+        return False
+    for x in range(2, int(sqrt(a)) + 1):
+        if a % x == 0:
+            return False
+    return True
+
+
+a, b = map(int, input().split())
+a += 1
+while not prime(a):
+    a += 1
+print("YES" if a == b else "NO")
+
