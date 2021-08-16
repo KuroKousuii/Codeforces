@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+f = int(input())
+print(min(a, d)*e+min(b, c, d-min(a, d))*f if e >= f else min(d, c, b)*f+min(a, d-min(d, c, b))*e)

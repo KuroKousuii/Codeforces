@@ -1,0 +1,8 @@
+x = int(input())
+s = input()
+if s.count('1') != s.count('0'):
+    print(1)
+    print(s)
+else:
+    print(2)
+    print(f'{s[0]} {s[1::]}')
